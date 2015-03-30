@@ -5,10 +5,11 @@
 # See documentation in:
 # http://doc.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy.item import Item, Field
 
 
-class NormandyItem(scrapy.Item):
-    # define the fields for your item here like:
-     title = scrapy.Field()
-     links = scrapy.Field()
+class Website(Item):
+
+    name = Field()
+    description = Field()
+    url = Field()

@@ -12,6 +12,8 @@ BOT_NAME = 'Normandy'
 
 SPIDER_MODULES = ['Normandy.spiders']
 NEWSPIDER_MODULE = 'Normandy.spiders'
+DEFAULT_ITEM_CLASS = 'Normandy.items.Website'
+ITEM_PIPELINES = {'Normandy.pipelines.FilterWordsPipeline' : 1}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'Normandy (+http://www.yourdomain.com)'
